@@ -396,4 +396,5 @@ def accuracy(output, target, topk=(1,)):
 
 
 if __name__ == '__main__':
+    __spec__ = None
     main()
