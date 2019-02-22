@@ -1,1 +1,0 @@
-pdb main.py -a resnet50 --lr 0.01 --dist-url 'tcp://127.0.0.1:9999' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 /fs/vulcan-scratch/datasets/imagenet/

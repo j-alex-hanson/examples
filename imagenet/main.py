@@ -195,6 +195,7 @@ def main_worker(gpu, ngpus_per_node, args):
     normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                      std=[0.229, 0.224, 0.225])
 
+    print("Loading training data")
     train_dataset = datasets.ImageFolder(
         traindir,
         transforms.Compose([
@@ -203,6 +204,7 @@ def main_worker(gpu, ngpus_per_node, args):
             transforms.ToTensor(),
             normalize,
         ]))
+    print("training data loaded")
 
     if args.distributed:
         train_sampler = torch.utils.data.distributed.DistributedSampler(train_dataset)
@@ -266,6 +268,7 @@ def train(train_loader, model, criterion, optimizer, epoch, args):
     end = time.time()
     for i, (input, target) in enumerate(train_loader):
         # measure data loading time
+        print("starting epoch ", i)
         data_time.update(time.time() - end)
 
         if args.gpu is not None:
