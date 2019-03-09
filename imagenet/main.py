@@ -268,7 +268,6 @@ def train(train_loader, model, criterion, optimizer, epoch, args):
     end = time.time()
     for i, (input, target) in enumerate(train_loader):
         # measure data loading time
-        print("starting epoch ", i)
         data_time.update(time.time() - end)
 
         if args.gpu is not None:
