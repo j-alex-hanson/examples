@@ -1,0 +1,2 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 148286 ON vulcan01 CANCELLED AT 2019-03-31T23:06:22 ***

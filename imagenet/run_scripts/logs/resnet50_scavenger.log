@@ -1,0 +1,3 @@
+slurmstepd: error: *** JOB 142007 ON vulcan22 CANCELLED AT 2019-03-05T23:17:10 DUE TO PREEMPTION ***
+slurmstepd: error: *** STEP 142007.1 ON vulcan22 CANCELLED AT 2019-03-05T23:17:10 DUE TO PREEMPTION ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
