@@ -1,6 +1,7 @@
 dcgan/data
 data
 *.pyc
+*.tar
 OpenNMT/data
 cpp/mnist/build
 cpp/dcgan/build
