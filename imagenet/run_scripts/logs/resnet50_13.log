@@ -1,5 +1,0 @@
-=> creating model 'resnet50'
-=> loading checkpoint 'checkpoint.pth.tar'
-=> loaded checkpoint 'checkpoint.pth.tar' (epoch 90)
-Loading training data
-training data loaded
